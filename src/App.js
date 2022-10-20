@@ -7,7 +7,7 @@ import { UpDownAnimation } from "./style/ComponentStyles";
 
 function App() {
   return (
-    <div /* className="App" */>
+    <div>
       <LandingPage />
       {/* //{" "}
       <div style={{ display: "flex" }}>

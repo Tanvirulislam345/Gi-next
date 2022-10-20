@@ -1,21 +1,27 @@
-import { HeaderName, Position } from "../../style/ComponentStyles";
+import { HeaderName, } from "../../style/ComponentStyles";
 
 export const Header = ({
   title,
-  JustifyContent = "start",
-  AlignItems = "center",
-  FlexDirection = "column",
+  JustifyContent,
+  AlignItems,
+  FlexDirection,
+  Width,
+  Margin,
   children,
 }) => {
-  const updatedStyled = {
-    display: "flex",
-    justifyContent: JustifyContent,
-    alignItems: AlignItems,
-    flexDirection: FlexDirection,
-  };
-  console.log(updatedStyled);
+
+
+  console.log(JustifyContent)
+
   return (
-    <div style={updatedStyled}>
+    <div style={{
+      display: "flex",
+      justifyContent: JustifyContent || "start",
+      alignItems: AlignItems || "start",
+      flexDirection: FlexDirection || "column",
+      width: Width,
+      margin: Margin,
+    }}>
       <HeaderName>{title}</HeaderName>
       {children}
     </div>

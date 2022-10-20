@@ -27,3 +27,27 @@ export const HeaderName = styled.h1`
   font-size: ${(props) => props.FontSize || "38px"};
   color: #000000;
 `;
+
+
+export const HrRule = styled.hr`
+  border-radius: 5px;
+  border: 2px solid red;
+  margin: ${(props) => props.Margin || "0px"};
+  width: ${(props) => props.Width || "100%"};
+
+`
+
+
+
+export const PoligonCard = styled.div`
+  width: 20vh;
+  height: 20vh;
+  background: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  margin: "10px"
+  clip-path: polygon(0% 50%, 25% 95%, 75% 95%, 100% 50%, 75% 5%, 25% 5%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+`
