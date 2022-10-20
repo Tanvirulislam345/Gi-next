@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import image1 from "./assets/phone1.png";
+import image2 from "./assets/phone2.png";
+import LandingPage from "./pages/LandingPage";
+
+import { UpDownAnimation } from "./style/ComponentStyles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div /* className="App" */>
+      <LandingPage />
+      {/* //{" "}
+      <div style={{ display: "flex" }}>
+        // <UpDownAnimation src={image1} Mover="mover1" />
+        // <UpDownAnimation src={image2} Index="-1" MarginLeft="-80px" />
+        //{" "}
+      </div>
+      // <div className="border">Hello</div> */}
     </div>
   );
 }
