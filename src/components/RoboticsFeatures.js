@@ -21,7 +21,6 @@ const RoboticsFeatures = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "start",
-
           }}>
             <PoligonCard />
           </Col>)
