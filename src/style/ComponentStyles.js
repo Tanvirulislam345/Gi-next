@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+export const DivContainer = styled.div`
   background-image:${(props) => props.BgImage};
   background-position: center;
   background-size: cover;
@@ -71,6 +71,26 @@ export const PoligonCard = styled.div`
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 `
 
+
+
+export const ContainerSelf = styled.div`
+  display: flex;
+  flex-direction: ${(props) => props.Direction || "column"};
+  justify-content: ${(props) => props.JustifyContent || "center"}; 
+  align-items:  ${(props) => props.AlignItems || "center"};  
+  height: ${(props) => props.Height || "100%"};
+  width: ${(props) => props.Width || "100%"};
+  margin: ${(props) => props.Margin}; 
+  padding: ${(props) => props.Padding};
+`
+
+export const CardContainer = styled.div`
+  display: flex;
+  justify-content: ${(props) => props.JustifyContent || "center"}; 
+  align-items:  ${(props) => props.AlignItems || "center"}; 
+  padding: ${(props) => props.Padding};
+
+`
 export const Card = styled.div`
 background: #FFFFFF;
 box-shadow: ${(props) => props.Shadow || "0px 0px 12px rgba(0, 0, 0, 0.08)"};
@@ -82,14 +102,4 @@ justify-content: ${(props) => props.JustifyContent || "center"};
 align-items:  ${(props) => props.AlignItems || "center"};
 `
 
-export const ContainerSelf = styled.div`
-  display: flex;
-  flex-direction: ${(props) => props.Direction || "column"};
-  justify-content: ${(props) => props.JustifyContent || "center"}; 
-  align-items:  ${(props) => props.AlignItems || "center"};  
-  /* height: ${(props) => props.Height || "100%"};
-  width: ${(props) => props.Width || "100%"}; */
-  /* margin: ${(props) => props.Margin}; 
-  padding: ${(props) => props.Padding}; */
-`
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Card, CardContainer, ContainerSelf, HeaderName } from '../../style/ComponentStyles';
+import { Card, DivContainer, HeaderName, CardContainer } from '../../style/ComponentStyles';
 import logo1 from "../../assets/logo1.png";
 import logo2 from "../../assets/logo2.png";
 import logo3 from "../../assets/logo3.png";
@@ -47,22 +47,37 @@ const dataset = [
 ]
 const Popular = () => {
     return (
-        <CardContainer BgImage={`url(${popularbg})`}>
-            <Container> <HeaderName TextAlign="center" Padding="140px 0px 20px">Popular Supported Cryptocurrencies</HeaderName>
-                <HeaderName TextAlign="center" FontSize="14px" FontWight="500">We integrate with 10+ of the most popular exchange including</HeaderName>
-
-                {/* <ContainerSelf Padding="60px 0px 150px"> */}
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "60px 0px 150px" }}><Row
-                    xs={1} sm={2} md={4}
-                    className="g-3"
-                    style={{ width: "800px" }}
+        <DivContainer BgImage={`url(${popularbg})`}>
+            <Container>
+                <HeaderName
+                    TextAlign="center"
+                    Padding="140px 0px 20px"
                 >
-                    {
-                        dataset.map((data, index) => <SimpleCard key={index} data={data} />)
-                    }
-                </Row></div>
-                {/* </ContainerSelf> */}</Container>
-        </CardContainer>
+                    Popular Supported Cryptocurrencies
+                </HeaderName>
+                <HeaderName
+                    TextAlign="center"
+                    FontSize="14px"
+                    FontWight="500"
+                >
+                    We integrate with 10+ of the most popular exchange including
+                </HeaderName>
+
+                <CardContainer Padding="60px 0px 150px">
+                    <Row
+                        xs={1} sm={2} md={4}
+                        className="g-3"
+                        style={{ maxWidth: "800px" }}
+
+                    >
+                        {
+                            dataset.map((data, index) => <SimpleCard key={index} data={data} />)
+                        }
+                    </Row>
+                </CardContainer>
+
+            </Container>
+        </DivContainer >
     );
 };
 
