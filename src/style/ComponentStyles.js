@@ -9,6 +9,7 @@ export const DivContainer = styled.div`
   object-fit: fill;
   width: ${(props) => props.Width || "100%"};
   min-height:  ${(props) => props.MinHeight || "100vh"};
+  padding: ${(props) => props.Padding};
 `;
 
 

@@ -19,6 +19,10 @@
   }
 }
 
+.accordion {
+  --bs-accordion-bg: #F5F5F5 !important;
+}
+
 /* .border {
   width: 20vh;
   height: 20vh;

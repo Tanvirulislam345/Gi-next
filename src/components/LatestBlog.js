@@ -5,6 +5,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Header } from './shareComponents/Shared';
 import blog from "../assets/blog.png";
+import AskedQuestion from './AskedQuestion';
 const LatestBlog = () => {
     return (
         <DivContainer Backgroung="#F5F5F5">
@@ -20,6 +21,7 @@ const LatestBlog = () => {
                     keep up-to-date with the latest news
                 </HeaderName>
                 <SliderFunction />
+                <AskedQuestion />
             </Container>
         </DivContainer>
     );
