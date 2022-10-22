@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const DivContainer = styled.div`
   background-image:${(props) => props.BgImage};
+  background: ${(props) => props.Background};
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,6 +33,7 @@ export const HeaderName = styled.h1`
   text-align: ${(props) => props.TextAlign};
   margin-top: ${(props) => props.MarginTop};
   padding: ${(props) => props.Padding};
+  width: ${(props) => props.Width};
 `;
 
 export const Button = styled.button`
@@ -41,6 +43,7 @@ export const Button = styled.button`
   font-size: ${(props) => props.FontSize || "14px"};
   color: ${(props) => props.Color || "#ffffff"};
   margin-top: ${(props) => props.MarginTop};
+  margin:${(props) => props.Margin};
   box-shadow:${(props) => props.Shadow || "0px 4px 8px rgba(0, 0, 0, 0.15)"};
   background: ${(props) => props.Background || "linear-gradient(180deg, #3EA36B 0%, #439D57 100%)"} ;
   border-radius: 28px;
@@ -88,7 +91,10 @@ export const CardContainer = styled.div`
   display: flex;
   justify-content: ${(props) => props.JustifyContent || "center"}; 
   align-items:  ${(props) => props.AlignItems || "center"}; 
+  flex-direction: ${(props) => props.FlexDirection}; 
   padding: ${(props) => props.Padding};
+  margin: ${(props) => props.Margin};
+  gap: ${(props) => props.Gap};
 
 `
 export const Card = styled.div`
@@ -96,10 +102,31 @@ background: #FFFFFF;
 box-shadow: ${(props) => props.Shadow || "0px 0px 12px rgba(0, 0, 0, 0.08)"};
 border-radius: ${(props) => props.BorderRadius || "20px"};
 padding:  ${(props) => props.Padding || "40px"};
+margin:  ${(props) => props.Margin};
 display: flex;
 flex-direction: column;
 justify-content: ${(props) => props.JustifyContent || "center"};
 align-items:  ${(props) => props.AlignItems || "center"};
 `
-
+export const Input = styled.input`
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  border:  1px solid #FFFFFF;
+  border-radius: 80px;
+  background: ${(props) => props.Background || "#87C28E"};
+  margin: ${(props) => props.Margin};
+  padding: ${(props) => props.Padding || "6px 8px"};
+  color: ${(props) => props.Color || "#1B253F"};
+  width: ${(props) => props.Width || "100%"};
+  outline: none;
+  &:focus {
+    outline: none;
+    border: 1px solid #FFFFFF;
+  }
+  ::placeholder {
+    color: ${(props) => props.PlaceHolderColor || "#ffffff"};
+  }
+`;
 

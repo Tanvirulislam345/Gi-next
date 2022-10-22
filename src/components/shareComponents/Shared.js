@@ -11,8 +11,6 @@ export const Header = ({
 }) => {
 
 
-  console.log(JustifyContent)
-
   return (
     <div style={{
       display: "flex",
