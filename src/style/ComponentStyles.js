@@ -20,9 +20,6 @@ export const UpDownAnimation = styled.img`
   z-index: ${(props) => props.Index};
   height: ${(props) => props.Height || "500px"};
   width: ${(props) => props.Width};
-  //   &:hover {
-  //     border: 1px solid gray;
-  //   }
 `;
 
 export const HeaderName = styled.h1`
@@ -96,6 +93,8 @@ export const CardContainer = styled.div`
   padding: ${(props) => props.Padding};
   margin: ${(props) => props.Margin};
   gap: ${(props) => props.Gap};
+  height: ${(props) => props.Height || "100%"};
+  width: ${(props) => props.Width || "100%"};
 
 `
 export const Card = styled.div`

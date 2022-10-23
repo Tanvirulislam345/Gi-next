@@ -19,22 +19,27 @@
   }
 }
 
+@keyframes mover3 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes mover4 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+
 .accordion {
   --bs-accordion-bg: #F5F5F5 !important;
 }
-
-/* .border {
-  width: 20vh;
-  height: 20vh;
-  background: #292929;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: whitesmoke;
-  clip-path: polygon(0% 50%, 25% 95%, 75% 95%, 100% 50%, 75% 5%, 25% 5%);
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-} */

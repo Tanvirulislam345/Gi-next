@@ -9,9 +9,7 @@ const Footer = () => {
     return (
         <DivContainer BgImage={`url(${footerImage})`} MinHeight="90vh">
             <Container>
-                {/* <CardContainer >
-                    <img src={playstor} alt="app" width="300px" height="60px" />
-                </CardContainer> */}
+
                 <Row xs={1} md={2}
                     className="g-3"
                     style={{ padding: "200px 0px 0px" }}

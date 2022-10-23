@@ -1,21 +1,24 @@
 import "./App.css";
-import image1 from "./assets/phone1.png";
-import image2 from "./assets/phone2.png";
 import LandingPage from "./pages/LandingPage";
-
-import { UpDownAnimation } from "./style/ComponentStyles";
+import AllBlogsPage from "./pages/AllBlogsPage";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <LandingPage />
-      {/* //{" "}
-      <div style={{ display: "flex" }}>
-        // <UpDownAnimation src={image1} Mover="mover1" />
-        // <UpDownAnimation src={image2} Index="-1" MarginLeft="-80px" />
-        //{" "}
-      </div>
-      // <div className="border">Hello</div> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />}>
+            <Route path="/home" element={<LandingPage />} />
+          </Route>
+          <Route path="/blog" element={<AllBlogsPage />} />
+        </Routes>
+      </BrowserRouter>,
     </div>
   );
 }
