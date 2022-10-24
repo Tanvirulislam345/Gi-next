@@ -36,6 +36,7 @@ export const HeaderName = styled.h1`
   padding: ${(props) => props.Padding};
   width: 100%;
   max-width: ${(props) => props.Width};
+  line-height: ${(props) => props.LineHeight};
 `;
 
 export const Button = styled.button`

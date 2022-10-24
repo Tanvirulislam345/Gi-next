@@ -8,14 +8,19 @@ import {
   HrRule,
 } from "../style/ComponentStyles";
 import blog from "../assets/blog.png";
+import { useNavigate } from "react-router-dom";
 
 const Blogs = () => {
+  const navigate = useNavigate();
+  const handleRoute = (id) => {
+    navigate(`/blog/${id}`);
+  };
   return (
     <Container>
       <Nav />
-      <Row xd={1} sm={2} md={3} lg={4} className="g-3 mt-3">
+      <Row xs={1} sm={2} md={3} lg={4} className="g-3 mt-3">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((data, index) => (
-          <Col>
+          <Col key={index}>
             <Card
               Shadow="0px 0px 2px rgba(0, 0, 0, 0.25)"
               Padding="0px"
@@ -37,8 +42,9 @@ const Blogs = () => {
                 <Button
                   Background="rgba(67, 160, 106, 0.2)"
                   Shadow="0px 0px 2px rgba(0, 0, 0, 0.25)"
-                  Color="red"
+                  Color="#43A06A"
                   Padding="4px 20px"
+                  onClick={() => handleRoute(1)}
                 >
                   Read full article
                 </Button>
@@ -66,6 +72,7 @@ function Nav() {
             Padding="0px 10px"
             Color={clicked === data ? "#43A06A" : "black"}
             onClick={() => setClicked(data)}
+            key={index}
           >
             {data}
           </HeaderName>

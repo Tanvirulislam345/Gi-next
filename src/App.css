@@ -8,7 +8,6 @@
   }
 }
 
-
 @keyframes mover2 {
   0% {
     transform: translateY(0);
@@ -39,7 +38,6 @@
   }
 }
 
-
 .accordion {
-  --bs-accordion-bg: #F5F5F5 !important;
+  --bs-accordion-bg: #ffffff !important;
 }
