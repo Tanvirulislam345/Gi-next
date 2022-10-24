@@ -8,7 +8,6 @@ import LatestBlog from "../components/LatestBlog";
 import AppBar from "../components/AppBar";
 import TryGroup from "../components/TryGroup";
 
-
 const LandingPage = () => {
   return (
     <>
