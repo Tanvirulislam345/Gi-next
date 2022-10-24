@@ -63,14 +63,15 @@ export const HrRule = styled.hr`
 `;
 
 export const PoligonCard = styled.div`
-  width: 20vh;
-  height: 20vh;
-  background: #292929;
+  width: 327px;
+  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: whitesmoke;
-  margin: "10px";
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(38, 45, 118, 0.12);
   clip-path: polygon(0% 50%, 25% 95%, 75% 95%, 100% 50%, 75% 5%, 25% 5%);
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 `;

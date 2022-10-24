@@ -1,12 +1,18 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { HrRule, PoligonCard } from "../style/ComponentStyles";
+import { Col, Container, Row } from "react-bootstrap";
+import {
+  CardContainer,
+  HeaderName,
+  HrRule,
+  PoligonCard,
+} from "../style/ComponentStyles";
 import { Header } from "./shareComponents/Shared";
-
+import poligonIcon from "../assets/poligonIcon.png";
 const RoboticsFeatures = () => {
   return (
-    <div>
-      <Header title="Our Robotics Features"
+    <Container style={{ minHeight: "100vh" }}>
+      <Header
+        title="Our Robotics Features"
         JustifyContent="center"
         AlignItems="center"
         Width="440px"
@@ -15,18 +21,48 @@ const RoboticsFeatures = () => {
         <HrRule Width="222px" />
       </Header>
 
-      <Row xs={1} sm={2} md={3}>
-        {
-          [1, 2, 3, 4].map(data => <Col key={data} style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "start",
-          }}>
-            <PoligonCard />
-          </Col>)
-        }
+      <Row xs={1} md={2} lg={3} className="g-3 mt-3">
+        {[1, 2, 4, 3, 54, 6].map((data) => (
+          <Col key={data}>
+            <PoligonCard>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <img
+                  src={poligonIcon}
+                  alt=""
+                  style={{ width: "64px", height: "64px" }}
+                />
+                <HeaderName
+                  FontSize="18px"
+                  TextAlign="center"
+                  Color="#419F69"
+                  MarginTop="30px"
+                >
+                  Infinity Grid Robot
+                </HeaderName>
+                <HeaderName
+                  FontSize="12px"
+                  FontWeight="500"
+                  TextAlign="center"
+                  Color="black"
+                  Width="250px"
+                >
+                  Infinity Grid Bot helps to “buy low and sell high” 24/7 and it
+                  makes sure the total amount of the assets remain the same
+                  while the price keeps rising.
+                </HeaderName>
+              </div>
+            </PoligonCard>
+          </Col>
+        ))}
       </Row>
-    </div>
+    </Container>
   );
 };
 

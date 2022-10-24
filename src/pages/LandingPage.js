@@ -10,16 +10,16 @@ import TryGroup from "../components/TryGroup";
 
 const LandingPage = () => {
   return (
-    <>
+    <div style={{ background: "#F5F5F5" }}>
       <AppBar />
       <HeaderBanner />
       <About />
-      {/*  <RoboticsFeatures /> */}
+      <RoboticsFeatures />
       <Popular />
       <LatestBlog />
       <TryGroup />
       <Footer />
-    </>
+    </div>
   );
 };
 

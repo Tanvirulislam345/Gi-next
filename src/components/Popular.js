@@ -85,7 +85,6 @@ function SimpleCard({ data }) {
   console.log(data.image);
   return (
     <Col>
-      {" "}
       <Card>
         <img src={data.image} alt="logo" width="60px" height="60px" />
         <HeaderName
