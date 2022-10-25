@@ -21,7 +21,6 @@ export const UpDownAnimation = styled.img`
   height: 100%;
   max-height: ${(props) => props.Height || "500px"};
   max-width: ${(props) => props.Width};
-
   padding: ${(props) => props.Padding};
 `;
 

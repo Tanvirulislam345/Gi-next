@@ -33,11 +33,11 @@ const RoboticsFeatures = () => {
                   flexDirection: "column",
                 }}
               >
-                <img
-                  src={poligonIcon}
-                  alt=""
-                  style={{ width: "64px", height: "64px" }}
-                />
+                <div className="logoImageContainer">
+                  {" "}
+                  <img src={poligonIcon} alt="" className="logoImage" />
+                </div>
+
                 <HeaderName
                   FontSize="18px"
                   TextAlign="center"

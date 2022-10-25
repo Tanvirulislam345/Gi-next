@@ -41,3 +41,20 @@
 .accordion {
   --bs-accordion-bg: #ffffff !important;
 }
+.logoImageContainer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoImage {
+  width: 64px;
+  height: 64px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.logoImage:hover {
+  width: 58px;
+  height: 58px;
+}

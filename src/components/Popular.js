@@ -86,7 +86,9 @@ function SimpleCard({ data }) {
   return (
     <Col>
       <Card>
-        <img src={data.image} alt="logo" width="60px" height="60px" />
+        <div className="logoImageContainer">
+          <img src={data.image} alt="logo" className="logoImage" />
+        </div>
         <HeaderName
           FontSize="20px"
           FontWight="600"
