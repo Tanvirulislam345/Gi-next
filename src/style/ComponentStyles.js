@@ -15,7 +15,7 @@ export const DivContainer = styled.div`
   padding: ${(props) => props.Padding};
 `;
 
-export const UpDownAnimation = styled.img`
+export const UpDownAnimation = styled.div`
   animation: ${(props) => `${props.Animation} 2s infinite alternate`};
   margin-left: ${(props) => props.MarginLeft};
   margin-right: ${(props) => props.MarginRight};
