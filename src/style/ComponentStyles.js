@@ -6,7 +6,10 @@ export const DivContainer = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  object-fit: fill;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
   width: ${(props) => props.Width || "100%"};
   min-height: ${(props) => props.MinHeight || "100vh"};
   padding: ${(props) => props.Padding};
@@ -19,7 +22,7 @@ export const UpDownAnimation = styled.img`
   z-index: ${(props) => props.Index};
   width: 100%;
   height: 100%;
-  max-height: ${(props) => props.Height || "500px"};
+  max-height: ${(props) => props.Height /* || "500px" */};
   max-width: ${(props) => props.Width};
   padding: ${(props) => props.Padding};
 `;

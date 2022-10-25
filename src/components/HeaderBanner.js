@@ -17,12 +17,13 @@ const HeaderBanner = () => {
   return (
     <DivContainer BgImage={`url(${background})`}>
       <Container>
-        <Row xs={1} md={2} className="g-3">
+        <Row xs={1} lg={2} className="g-3">
           <Col>
             <ContainerSelf
               JustifyContent="start"
               AlignItems="start"
-              Margin="200px auto"
+              // Margin="200px auto"
+              className="content"
             >
               <HeaderName FontWeight="700" FontSize="56px" Color="#ffffff">
                 The world’s fastest growing Crypto App
@@ -45,8 +46,7 @@ const HeaderBanner = () => {
                 alt="image"
                 Animation="mover1"
                 Index="1"
-                Width="280px"
-                Height="570px"
+                className="phone"
               />
               <UpDownAnimation
                 src={phone2}
@@ -54,8 +54,7 @@ const HeaderBanner = () => {
                 Animation="mover2"
                 MarginLeft="-80px"
                 MarginRight="-70px"
-                Width="300px"
-                Height="474px"
+                className="phone2"
               />
               <UpDownAnimation
                 src={icon1}

@@ -17,12 +17,13 @@ const About = () => {
   return (
     <Container>
       <CardContainer>
-        <Row className="g-3" xs={1} md={2}>
+        <Row className="g-3" xs={1} lg={2}>
           <Col>
             <ContainerSelf
               JustifyContent="start"
               AlignItems="start"
-              Margin="150px 0px"
+              // Margin="150px 0px"
+              className="content"
             >
               <Header title="About GiNext">
                 <HrRule Width="180px" />
@@ -53,22 +54,21 @@ const About = () => {
                 Height="200px"
                 Width="200px"
                 Index="1"
+                className="p-xs-2 p-md-0"
               />
               <UpDownAnimation
                 src={about2}
                 alt="image"
-                Height="400px"
-                Width="400px"
-                MarginRight="-250px"
-                MarginLeft="-120px"
+                // MarginRight="-250px"
+                // MarginLeft="-120px"
+                className="back1"
               />
               <UpDownAnimation
                 src={phone3}
                 alt="image"
                 Animation="mover1"
-                Height="550px"
-                Width="300px"
                 Index="1"
+                className="phone"
               />
             </ContainerSelf>
           </Col>

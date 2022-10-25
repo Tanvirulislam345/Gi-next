@@ -27,6 +27,7 @@ const TryGroup = () => {
           Animation="mover3"
           Width="750px"
           Height="600px"
+          className="try1"
         />
         <UpDownAnimation
           src={middle}
@@ -37,6 +38,7 @@ const TryGroup = () => {
           MarginLeft="-330px"
           MarginRight="-330px"
           Index="1"
+          className="try2"
         />
         <UpDownAnimation
           src={right}
@@ -44,6 +46,7 @@ const TryGroup = () => {
           Animation="mover4"
           Width="750px"
           Height="600px"
+          className="try1"
         />
       </CardContainer>
       <CardContainer>
