@@ -44,7 +44,7 @@ const HeaderBanner = () => {
                 Animation="mover1"
                 Index="1"
                 Height="500px"
-                Width="220px"
+                Width="250px"
               >
                 <img src={phone1} alt="image" height="100%" width="100%" />
               </UpDownAnimation>
@@ -53,7 +53,7 @@ const HeaderBanner = () => {
                 MarginLeft="-80px"
                 MarginRight="-70px"
                 Height="450px"
-                Width="260px"
+                Width="290px"
               >
                 <img src={phone2} alt="image" height="100%" width="100%" />
               </UpDownAnimation>
