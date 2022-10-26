@@ -13,12 +13,12 @@ const LandingPage = () => {
     <div style={{ background: "#F5F5F5" }}>
       <AppBar />
       <HeaderBanner />
-      {/* <About />
+      <About />
       <RoboticsFeatures />
       <Popular />
       <LatestBlog />
       <TryGroup />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

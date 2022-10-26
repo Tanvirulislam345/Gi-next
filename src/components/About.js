@@ -22,7 +22,6 @@ const About = () => {
             <ContainerSelf
               JustifyContent="start"
               AlignItems="start"
-              // Margin="150px 0px"
               className="content"
             >
               <Header title="About GiNext">
@@ -48,28 +47,30 @@ const About = () => {
           <Col>
             <ContainerSelf Direction="row">
               <UpDownAnimation
-                src={about1}
-                alt="image"
-                Animation="mover2"
-                Height="200px"
-                Width="200px"
-                Index="1"
-                className="p-xs-2 p-md-0"
-              />
-              <UpDownAnimation
-                src={about2}
-                alt="image"
-                // MarginRight="-250px"
-                // MarginLeft="-120px"
-                className="back1"
-              />
-              <UpDownAnimation
-                src={phone3}
-                alt="image"
                 Animation="mover1"
                 Index="1"
-                className="phone"
-              />
+                Height="250px"
+                Width="250px"
+              >
+                <img src={about1} alt="image" height="100%" width="100%" />
+              </UpDownAnimation>
+              <UpDownAnimation
+                Height="300px"
+                Width="300px"
+                MarginLeft="-150px"
+                MarginRight="-150px"
+              >
+                <img src={about2} alt="image" height="100%" width="100%" />
+              </UpDownAnimation>
+
+              <UpDownAnimation
+                Animation="mover1"
+                Index="1"
+                Height="450px"
+                Width="250px"
+              >
+                <img src={phone3} alt="image" height="100%" width="100%" />
+              </UpDownAnimation>
             </ContainerSelf>
           </Col>
         </Row>

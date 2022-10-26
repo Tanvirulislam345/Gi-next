@@ -21,33 +21,21 @@ const TryGroup = () => {
       </HeaderName>
 
       <CardContainer>
+        <UpDownAnimation Animation="mover3" Width="750px" Height="600px">
+          <img src={left} alt="image" height="100%" width="100%" />
+        </UpDownAnimation>
         <UpDownAnimation
-          src={left}
-          alt="image"
-          Animation="mover3"
-          Width="750px"
-          Height="600px"
-          className="try1"
-        />
-        <UpDownAnimation
-          src={middle}
-          alt="image"
           Animation="mover1"
           Width="500px"
-          Height="500px"
-          MarginLeft="-330px"
-          MarginRight="-330px"
+          Height="520px"
           Index="1"
-          className="try2"
-        />
-        <UpDownAnimation
-          src={right}
-          alt="image"
-          Animation="mover4"
-          Width="750px"
-          Height="600px"
-          className="try1"
-        />
+          className="phone"
+        >
+          <img src={middle} alt="image" height="100%" width="100%" />
+        </UpDownAnimation>
+        <UpDownAnimation Animation="mover4" Width="750px" Height="600px">
+          <img src={right} alt="image" height="100%" width="100%" />
+        </UpDownAnimation>
       </CardContainer>
       <CardContainer>
         <img src={playstor} alt="app" width="300px" height="60px" />

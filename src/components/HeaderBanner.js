@@ -15,14 +15,13 @@ import background from "../assets/Backgroun1.png";
 
 const HeaderBanner = () => {
   return (
-    <DivContainer BgImage={`url(${background})`}>
+    <DivContainer BgImage={`url(${background})`} MinHeight="85vh">
       <Container>
         <Row xs={1} lg={2} className="g-3">
           <Col>
             <ContainerSelf
               JustifyContent="start"
               AlignItems="start"
-              // Margin="200px auto"
               className="content"
             >
               <HeaderName FontWeight="700" FontSize="56px" Color="#ffffff">
@@ -46,7 +45,6 @@ const HeaderBanner = () => {
                 Index="1"
                 Height="500px"
                 Width="220px"
-                className="phone"
               >
                 <img src={phone1} alt="image" height="100%" width="100%" />
               </UpDownAnimation>
@@ -55,7 +53,7 @@ const HeaderBanner = () => {
                 MarginLeft="-80px"
                 MarginRight="-70px"
                 Height="450px"
-                Width="260px" /* className="phone" */
+                Width="260px"
               >
                 <img src={phone2} alt="image" height="100%" width="100%" />
               </UpDownAnimation>
@@ -64,27 +62,9 @@ const HeaderBanner = () => {
                 Index="1"
                 Height="60px"
                 Width="60px"
-
-                /* className="phone" */
               >
                 <img src={icon1} alt="image" height="100%" width="100%" />
               </UpDownAnimation>
-              {/* <UpDownAnimation
-                src={phone2}
-                alt="image"
-                Animation="mover2"
-                MarginLeft="-80px"
-                MarginRight="-70px"
-                className="phone2"
-              />
-              <UpDownAnimation
-                src={icon1}
-                alt="image"
-                Animation="mover1"
-                Index="1"
-                Width="60px"
-                Height="60px"
-              /> */}
             </ContainerSelf>
           </Col>
         </Row>

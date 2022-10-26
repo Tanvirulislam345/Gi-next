@@ -11,6 +11,7 @@ export const DivContainer = styled.div`
   left: 0;
   right: 0;
   width: ${(props) => props.Width || "100%"};
+  height: ${(props) => props.Height || "100%"};
   min-height: ${(props) => props.MinHeight || "100vh"};
   padding: ${(props) => props.Padding};
 `;
