@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import AppBar from "../components/AppBar";
+import AppBar2 from "../components/AppBar2";
 import Details from "../components/Details";
 import Footer from "../components/Footer";
 
@@ -9,7 +9,7 @@ const ViewPage = () => {
   console.log(blogId);
   return (
     <>
-      <AppBar />
+      <AppBar2 />
       <Details id={blogId} />
       <Footer />
     </>

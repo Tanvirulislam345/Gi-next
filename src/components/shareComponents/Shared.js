@@ -1,4 +1,4 @@
-import { HeaderName, } from "../../style/ComponentStyles";
+import { HeaderName } from "../../style/ComponentStyles";
 
 export const Header = ({
   title,
@@ -7,19 +7,21 @@ export const Header = ({
   FlexDirection,
   Width,
   Margin,
+  Padding,
   children,
 }) => {
-
-
   return (
-    <div style={{
-      display: "flex",
-      justifyContent: JustifyContent || "start",
-      alignItems: AlignItems || "start",
-      flexDirection: FlexDirection || "column",
-      width: Width,
-      margin: Margin,
-    }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: JustifyContent || "start",
+        alignItems: AlignItems || "start",
+        flexDirection: FlexDirection || "column",
+        width: Width,
+        margin: Margin,
+        padding: Padding,
+      }}
+    >
       <HeaderName>{title}</HeaderName>
       {children}
     </div>

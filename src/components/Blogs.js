@@ -13,10 +13,10 @@ import { useNavigate } from "react-router-dom";
 const Blogs = () => {
   const navigate = useNavigate();
   const handleRoute = (id) => {
-    navigate(`/blog/${id}`);
+    navigate(`/blogs/${id}`);
   };
   return (
-    <Container>
+    <Container id="blogs">
       <Nav />
       <Row xs={1} sm={2} md={3} lg={4} className="g-3 mt-3">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((data, index) => (

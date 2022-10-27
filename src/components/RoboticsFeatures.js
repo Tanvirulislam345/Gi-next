@@ -10,13 +10,14 @@ import { Header } from "./shareComponents/Shared";
 import poligonIcon from "../assets/poligonIcon.png";
 const RoboticsFeatures = () => {
   return (
-    <Container style={{ minHeight: "100vh" }}>
+    <Container style={{ minHeight: "100vh" }} id="features">
       <Header
         title="Our Robotics Features"
         JustifyContent="center"
         AlignItems="center"
         Width="440px"
         Margin="auto"
+        Padding="140px 0px 20px"
       >
         <HrRule Width="222px" />
       </Header>

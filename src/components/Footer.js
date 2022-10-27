@@ -23,7 +23,13 @@ const Footer = () => {
           </Col>
           <Col>
             <CardContainer>
-              <img src={playstor} alt="app" width="300px" height="60px" />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.wiztecbd.e_next_trading&hl=en&gl=GB"
+                target="blank"
+                title="this is link"
+              >
+                <img src={playstor} alt="app" width="300px" height="60px" />
+              </a>
             </CardContainer>
           </Col>
         </Row>

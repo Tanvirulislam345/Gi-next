@@ -12,7 +12,7 @@ import right from "../assets/rightgroup.png";
 import playstor from "../assets/playstore.png";
 const TryGroup = () => {
   return (
-    <DivContainer BgImage={`url(${background})`}>
+    <DivContainer BgImage={`url(${background})`} id="download">
       <HeaderName FontSize="56px" TextAlign="center" Padding="60px 0px 0px">
         Let’s Try It
       </HeaderName>
@@ -38,7 +38,13 @@ const TryGroup = () => {
         </UpDownAnimation>
       </CardContainer>
       <CardContainer>
-        <img src={playstor} alt="app" width="300px" height="60px" />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.wiztecbd.e_next_trading&hl=en&gl=GB"
+          target="blank"
+          title="this is link"
+        >
+          <img src={playstor} alt="app" width="300px" height="60px" />
+        </a>
       </CardContainer>
     </DivContainer>
   );

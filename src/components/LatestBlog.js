@@ -18,18 +18,33 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { Header } from "./shareComponents/Shared";
 import blog from "../assets/blog.png";
 import AskedQuestion from "./AskedQuestion";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const LatestBlog = () => {
   return (
-    <DivContainer Backgroung="#F5F5F5">
+    <DivContainer Backgroung="#F5F5F5" id="blog">
       <Container>
         <Header title="Our Latest Blogs" Margin="100px 0px 20px">
           <HrRule Width="200px" />
         </Header>
-        <HeaderName FontSize="16px" FontWeight="500" Width="660px">
-          We constantly review our tools and popular trading strategies. Follow
-          out blog to keep up-to-date with the latest news
-        </HeaderName>
+        <div className="responseHeader">
+          <HeaderName FontSize="16px" FontWeight="500" Width="660px">
+            We constantly review our tools and popular trading strategies.
+            Follow out blog to keep up-to-date with the latest news
+          </HeaderName>
+          <HeaderName
+            FontSize="18px"
+            FontWeight="600"
+            Width="100%"
+            TextAlign="end"
+          >
+            <NavLink
+              to="/blogs"
+              style={{ textDecoration: "none", color: "#43A06A" }}
+            >
+              View All
+            </NavLink>
+          </HeaderName>
+        </div>
         <SliderFunction />
         <AskedQuestion />
       </Container>
@@ -66,7 +81,7 @@ function SliderFunction() {
 function SliderItem() {
   const navigate = useNavigate();
   const handleRoute = (id) => {
-    navigate(`/blog/${id}`);
+    navigate(`/blogs/${id}`);
   };
   return (
     <Card

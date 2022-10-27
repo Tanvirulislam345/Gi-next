@@ -15,9 +15,9 @@ import { Header } from "./shareComponents/Shared";
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <CardContainer>
-        <Row className="g-3" xs={1} lg={2}>
+        <Row className="g-3" xs={1} lg={2} style={{ minHeight: "80vh" }}>
           <Col>
             <ContainerSelf
               JustifyContent="start"

@@ -85,7 +85,7 @@ function SimpleCard({ data }) {
   console.log(data.image);
   return (
     <Col>
-      <Card>
+      <Card Padding="20px 10px">
         <div className="logoImageContainer">
           <img src={data.image} alt="logo" className="logoImage" />
         </div>
@@ -97,6 +97,45 @@ function SimpleCard({ data }) {
         >
           {data.name}
         </HeaderName>
+
+        <CardContainer JustifyContent="space-between" FlexDirection="row">
+          <CardContainer FlexDirection="column">
+            <HeaderName
+              FontSize="10px"
+              FontWight="500"
+              TextAlign="center"
+              Color="#46A16B"
+            >
+              Last Price
+            </HeaderName>
+            <HeaderName
+              FontSize="12px"
+              FontWight="600"
+              TextAlign="center"
+              Color="#000000"
+            >
+              $255.000
+            </HeaderName>
+          </CardContainer>
+          <CardContainer FlexDirection="column">
+            <HeaderName
+              FontSize="10px"
+              FontWight="500"
+              TextAlign="center"
+              Color="#46A16B"
+            >
+              Last Price
+            </HeaderName>
+            <HeaderName
+              FontSize="12px"
+              FontWight="600"
+              TextAlign="center"
+              Color="#000000"
+            >
+              $255.000
+            </HeaderName>
+          </CardContainer>
+        </CardContainer>
       </Card>
     </Col>
   );

@@ -15,7 +15,7 @@ import background from "../assets/Backgroun1.png";
 
 const HeaderBanner = () => {
   return (
-    <DivContainer BgImage={`url(${background})`} MinHeight="85vh">
+    <DivContainer BgImage={`url(${background})`} MinHeight="85vh" id="home">
       <Container>
         <Row xs={1} lg={2} className="g-3">
           <Col>

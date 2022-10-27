@@ -220,7 +220,7 @@ function SliderFunction() {
 function SliderItem() {
   const navigate = useNavigate();
   const handleRoute = (id) => {
-    navigate(`/blog/${id}`);
+    navigate(`/blogs/${id}`);
   };
   return (
     <Card

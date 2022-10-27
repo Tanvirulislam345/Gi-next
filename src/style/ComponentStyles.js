@@ -23,6 +23,7 @@ export const UpDownAnimation = styled.div`
   z-index: ${(props) => props.Index};
   width: 100%;
   height: 100%;
+  cursor: pointer;
   max-height: ${(props) => props.Height /* || "500px" */};
   max-width: ${(props) => props.Width};
   padding: ${(props) => props.Padding};
@@ -60,7 +61,8 @@ export const Button = styled.button`
 
 export const HrRule = styled.hr`
   border-radius: 5px;
-  border: 2px solid red;
+  border: 2px solid #43a06a;
+  opacity: 100%;
   margin: ${(props) => props.Margin || "0px"};
   width: ${(props) => props.Width || "100%"};
 `;
@@ -77,6 +79,7 @@ export const PoligonCard = styled.div`
   box-shadow: 0px 0px 25px rgba(38, 45, 118, 0.12);
   clip-path: polygon(0% 50%, 25% 95%, 75% 95%, 100% 50%, 75% 5%, 25% 5%);
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  cursor: pointer;
 `;
 
 export const ContainerSelf = styled.div`
@@ -103,10 +106,11 @@ export const CardContainer = styled.div`
 `;
 export const Card = styled.div`
   background: #ffffff;
-  box-shadow: ${(props) => props.Shadow || "0px 0px 12px rgba(0, 0, 0, 0.08)"};
+  box-shadow: ${(props) => props.Shadow || "0px 0px 30px #C9CFFF"};
   border-radius: ${(props) => props.BorderRadius || "20px"};
   padding: ${(props) => props.Padding || "40px"};
   margin: ${(props) => props.Margin};
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: ${(props) => props.JustifyContent || "center"};

@@ -1,9 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink } from "react-router-dom";
 import logo from "../assets/navlogo.png";
-import { Button } from "../style/ComponentStyles";
+import { Link } from "react-scroll";
 
 function AppBar() {
   const navStyle = {
@@ -13,9 +12,21 @@ function AppBar() {
     textDecoration: "none",
     selfAlign: "center",
     margin: "12px",
+    cursor: "pointer",
   };
   return (
-    <Navbar collapseOnSelect expand="lg" style={{ background: "#4EA470" }}>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      style={{
+        background: "#4EA470",
+        position: "fixed",
+        left: 0,
+        top: 0,
+        width: "100%",
+        zIndex: 2,
+      }}
+    >
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="" height="40px" width="120px" />
@@ -23,27 +34,68 @@ function AppBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <NavLink to="/home" style={navStyle}>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              style={navStyle}
+            >
               Home
-            </NavLink>
-            <NavLink to="#" style={navStyle}>
+            </Link>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              style={navStyle}
+            >
               About
-            </NavLink>
-            <NavLink to="/blog" style={navStyle}>
-              Blog
-            </NavLink>
-            <NavLink href="#deets" style={navStyle}>
+            </Link>
+            <Link
+              activeClass="active"
+              to="features"
+              spy={true}
+              smooth={true}
+              offset={20}
+              duration={500}
+              style={navStyle}
+            >
               Features
-            </NavLink>
-            <NavLink href="#deets" style={navStyle}>
+            </Link>
+            <Link
+              activeClass="active"
+              to="blog"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              style={navStyle}
+            >
+              Blogs
+            </Link>
+            <Link
+              activeClass="active"
+              to="download"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+              style={navStyle}
+            >
               Download
-            </NavLink>
-            <Button
+            </Link>
+
+            {/* <Button
               Padding="0px 20px"
               Background="linear-gradient(180deg, #3FA36A 0%, #429F5C 100%)"
             >
               Get Started
-            </Button>
+            </Button> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
