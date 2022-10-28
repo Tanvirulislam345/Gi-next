@@ -60,7 +60,6 @@ const SliderComponent = ({ show }) => {
                     justifyContent: 'center',
                     alignItems: 'center',
                 }}>
-                {' '}
                 <Spinner animation='grow' />
             </div>
         );
