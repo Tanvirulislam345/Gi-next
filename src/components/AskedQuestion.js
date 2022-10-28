@@ -26,7 +26,7 @@ export default AskedQuestion;
 function Question() {
     return (
         <Accordion defaultActiveKey='0'>
-            {[1, 2, 3, 4].map((data, index) => (
+            {[1, 2, 3, 4, 5, 6].map((data, index) => (
                 <Accordion.Item key={index} eventKey={index}>
                     <Accordion.Header>
                         Is a crypto trading bot profitable?

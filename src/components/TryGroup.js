@@ -22,7 +22,7 @@ const TryGroup = () => {
 
       <CardContainer>
         <UpDownAnimation Animation="mover3" Width="750px" Height="600px">
-          <img src={left} alt="image" height="100%" width="100%" />
+          <img src={left} alt="" height="100%" width="100%" />
         </UpDownAnimation>
         <UpDownAnimation
           Animation="mover1"
@@ -31,17 +31,17 @@ const TryGroup = () => {
           Index="1"
           className="phone"
         >
-          <img src={middle} alt="image" height="100%" width="100%" />
+          <img src={middle} alt="" height="100%" width="100%" />
         </UpDownAnimation>
         <UpDownAnimation Animation="mover4" Width="750px" Height="600px">
-          <img src={right} alt="image" height="100%" width="100%" />
+          <img src={right} alt="" height="100%" width="100%" />
         </UpDownAnimation>
       </CardContainer>
       <CardContainer>
         <a
           href="https://play.google.com/store/apps/details?id=com.wiztecbd.e_next_trading&hl=en&gl=GB"
           target="blank"
-          title="this is link"
+          title="Download App from playstore"
         >
           <img src={playstor} alt="app" width="300px" height="60px" />
         </a>
