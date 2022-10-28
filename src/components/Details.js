@@ -9,6 +9,7 @@ import parse from 'html-react-parser';
 
 const Details = ({ id }) => {
     const [blog, setBlog] = useState(null);
+    console.log(blog)
     useEffect(() => {
         axios
             .get(`http://ginexttradingcorp.com/api/seo-blog-details/${id}`)

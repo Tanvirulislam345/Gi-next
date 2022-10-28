@@ -45,6 +45,7 @@ const SliderComponent = ({ show }) => {
     };
 
     const [blogs, setBlogs] = useState(null);
+    console.log(blogs)
     useEffect(() => {
         axios
             .get('http://ginexttradingcorp.com/api/seo-blog')
