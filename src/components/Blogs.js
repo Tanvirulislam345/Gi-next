@@ -16,7 +16,7 @@ const Blogs = () => {
     const [blogs, setBlogs] = useState(null);
     useEffect(() => {
         axios
-            .get('http://ginexttradingcorp.com/api/seo-blog')
+            .get('https://ginexttradingcorp.com/api/seo-blog')
             .then((res) => setBlogs(res.data.seo_blogs.data));
     }, []);
 

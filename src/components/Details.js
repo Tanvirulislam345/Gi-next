@@ -12,7 +12,7 @@ const Details = ({ id }) => {
     console.log(blog)
     useEffect(() => {
         axios
-            .get(`http://ginexttradingcorp.com/api/seo-blog-details/${id}`)
+            .get(`https://ginexttradingcorp.com/api/seo-blog-details/${id}`)
             .then((res) => setBlog(res.data?.seo_blogs));
     }, [id]);
 
