@@ -9,15 +9,6 @@ import {
 import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
 import popularbg from "../assets/popularbg.png";
-import parse from "html-react-parser";
-// import SHIB from "../assets/logo1.png";
-// import DOGE from "../assets/logo2.png";
-// import SOL from "../assets/logo3.png";
-// import BNB from "../assets/logo4.png";
-// import BTC from "../assets/logo5.png";
-// import ETH from "../assets/logo6.png";
-// import ADA from "../assets/logo7.png";
-// import ADA from "../assets/FTT.png";
 
 const Popular = () => {
   const [blogs, setBlogs] = useState(null);
@@ -78,7 +69,6 @@ function SimpleCard({ data }) {
         <div className="logoImageContainer">
           <img
             src={require(`../assets/${data?.exchange_key}.png`)}
-            // src={parse(`${data?.exchange_key}`)}
             alt="logo"
             className="logoImage"
           />
