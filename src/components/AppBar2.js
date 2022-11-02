@@ -39,7 +39,7 @@ function AppBar2() {
               Home
             </NavLink>
             <Link to="#" style={navStyle}>
-              blogs
+              Blogs
             </Link>
             {/*  <Link
               activeClass="active"
