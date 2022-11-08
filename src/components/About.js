@@ -12,6 +12,7 @@ import about1 from "../assets/about1.png";
 import about2 from "../assets/about2.png";
 import phone3 from "../assets/phone3.png";
 import { Header } from "./shareComponents/Shared";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -41,7 +42,15 @@ const About = () => {
                 cryptocurrency and be recognized as the most responsible,
                 trustworthy company around.
               </HeaderName>
-              <Button MarginTop="40px">Get Started</Button>
+              <Link
+                to="download"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                <Button MarginTop="40px">Start Free</Button>
+              </Link>
             </ContainerSelf>
           </Col>
           <Col>

@@ -21,19 +21,19 @@ const TryGroup = () => {
       </HeaderName>
 
       <CardContainer>
-        <UpDownAnimation Animation="mover3" Width="750px" Height="600px">
+        <UpDownAnimation Animation="mover3" Width="750px" Height="500px">
           <img src={left} alt="" height="100%" width="100%" />
         </UpDownAnimation>
         <UpDownAnimation
           Animation="mover1"
           Width="500px"
-          Height="520px"
+          Height="550px"
           Index="1"
           className="phone"
         >
-          <img src={middle} alt="" height="100%" width="100%" />
+          <img src={middle} alt="" height="510px" width="100%" />
         </UpDownAnimation>
-        <UpDownAnimation Animation="mover4" Width="750px" Height="600px">
+        <UpDownAnimation Animation="mover4" Width="750px" Height="500px">
           <img src={right} alt="" height="100%" width="100%" />
         </UpDownAnimation>
       </CardContainer>

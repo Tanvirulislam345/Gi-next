@@ -62,7 +62,6 @@ const Popular = () => {
 export default Popular;
 
 function SimpleCard({ data }) {
-  console.log(data.exchange_key);
   return (
     <Col>
       <Card Padding="20px 10px">

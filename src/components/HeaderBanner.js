@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import {
   Button,
-  CardContainer,
   ContainerSelf,
   DivContainer,
   HeaderName,
@@ -12,6 +11,7 @@ import phone1 from "../assets/phone1.png";
 import phone2 from "../assets/phone2.png";
 import icon1 from "../assets/icon1.png";
 import background from "../assets/Backgroun1.png";
+import { Link } from "react-scroll";
 
 const HeaderBanner = () => {
   return (
@@ -24,18 +24,26 @@ const HeaderBanner = () => {
               AlignItems="start"
               className="content"
             >
-              <HeaderName FontWeight="700" FontSize="56px" Color="#ffffff">
-                The world’s fastest growing Crypto App
+              <HeaderName FontWeight="700" FontSize="40px" Color="#ffffff">
+                The World's most advanced automated crypto trading for Everyone
               </HeaderName>
               <HeaderName
-                FontWeight="600"
+                FontWeight="500"
                 FontSize="20px"
                 Color="#ffffff"
                 MarginTop="20px"
               >
-                Track your performance to get your best crypto profit
+                You don’t need to control trade anymore.
               </HeaderName>
-              <Button MarginTop="30px">Get Started</Button>
+              <Link
+                to="download"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                <Button MarginTop="30px">Download now</Button>
+              </Link>
             </ContainerSelf>
           </Col>
           <Col>
